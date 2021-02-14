@@ -52,7 +52,7 @@ string Unit::getNameUnit() const
 	return nameUnit;
 }
 
-void Unit::upLevel()
+void Unit::levelUp()
 {
 	if (levelUnit < 6) {
 		++levelUnit;
@@ -64,12 +64,12 @@ void Unit::upLevel()
 	}
 }
 
-ostream& operator<<(ostream& os, const Unit& obj)
+ostream& operator<<(ostream& ost, const Unit& unit)
 {
-	os << "Name unit : " << obj.nameUnit << endl;
-	os << "Health : " << obj.health << endl;
-	os << "Damege : " << obj.damege << endl;
-	os << "Dodge : " << obj.dodge << "%" << endl;
-	os << "Level unit : " << obj.levelUnit << endl;
-	return os;
+	ost << "Name unit : " << unit.nameUnit << endl;
+	ost << "Health : " << unit.health << endl;
+	ost << "Damege : " << unit.damege << endl;
+	ost << "Dodge : " << unit.dodge << "%" << endl;
+	ost << "Level unit : " << unit.levelUnit << endl;
+	return ost;
 }

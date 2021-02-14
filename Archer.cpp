@@ -4,7 +4,7 @@ Archer::Archer() : Unit("Archer", 12, 4, 40)
 {
 }
 
-void Archer::upLevel()
+void Archer::levelUp()
 {
-	Unit::upLevel();
+	Unit::levelUp();
 }

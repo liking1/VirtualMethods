@@ -16,7 +16,7 @@ public:
 	double getDodge() const;
 	string getNameUnit() const;
 
-	void upLevel();
+	void levelUp();
 	friend ostream& operator<<(ostream& os, const Unit& obj);
 
 protected:

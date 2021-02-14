@@ -1,9 +1,9 @@
 #include "Team.h"
 
-void Team::Uplevel()
+void Team::levelUp()
 {
 	for (auto& v : team) {
-		v.upLevel();
+		v.levelUp();
 	}
 }
 Team::Team(const string& nameTeam)
@@ -74,12 +74,12 @@ size_t Team::getCountTeam() const
 	return countUnit;
 }
 
-ostream& operator<<(ostream& os, const Team& obj)
+ostream& operator<<(ostream& ost, const Team& t)
 {
-	os << "Name team : " << obj.nameTeam << endl;
-	os << endl;
-	for (auto& v : obj.team) {
-		os << v << endl;
+	ost << "Team's name : " << t.nameTeam << endl;
+	ost << endl;
+	for (auto& v : t.team) {
+		ost << v << endl;
 	}
-	return os;
+	return ost;
 }

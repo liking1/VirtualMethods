@@ -6,8 +6,8 @@ Swordsman::Swordsman()
 
 }
 
-void Swordsman::upLevel()
+void Swordsman::levelUp()
 {
-	Unit::upLevel();
+	Unit::levelUp();
 
 }

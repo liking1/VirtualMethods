@@ -58,10 +58,10 @@ void GAME::searchForAnOpponent(Team& firstTeam, Team& secondTeam)
         }
     }
     if ((winFirst == true && winSecond == true) || (winThird == true && winSecond == true) || (winFirst == true && winThird == true) || (winFirst == true && winSecond == true && winThird == true)) {
-        cout << "Win team " << firstTeam.getName() << endl;
+        cout << "Winner team " << firstTeam.getName() << endl;
     }
     else {
-        cout << "Win team " << secondTeam.getName() << endl;
+        cout << "Winner team " << secondTeam.getName() << endl;
     }
 }
 

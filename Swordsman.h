@@ -5,5 +5,5 @@ class Swordsman : public Unit
 {
 public:
 	Swordsman();
-	void upLevel();
+	void levelUp();
 };

@@ -18,7 +18,7 @@ public:
 	friend ostream& operator<<(ostream& os, const Team& obj);
 	string getName() const;
 	size_t getCountTeam() const;
-	void Uplevel();
+	void levelUp();
 private:
 	void randomUnit();
 	vector<Unit> team;

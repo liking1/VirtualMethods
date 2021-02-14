@@ -6,5 +6,5 @@ class Mage :public Unit
 public:
 	Mage();
 protected:
-	void upLevel();
+	void levelUp();
 };

@@ -6,5 +6,5 @@ class Archer :public Unit
 public:
 	Archer();
 protected:
-	void upLevel();
+	void levelUp();
 };

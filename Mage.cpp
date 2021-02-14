@@ -4,7 +4,7 @@ Mage::Mage() : Unit("Mage", 8, 10, 30)
 {
 }
 
-void Mage::upLevel()
+void Mage::levelUp()
 {
-	Unit::upLevel();
+	Unit::levelUp();
 }
